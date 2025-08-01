@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Living Word Church</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Living Word Church</h1>
+      <nav id="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-about">
+    <div class="container">
+      <h2>About Living Word Church</h2>
+      <p>We are a Bible-believing community grounded in love, worship, and service.</p>
+    </div>
+  </section>
+
+  <section class="history">
+    <div class="container">
+      <h3>Our History</h3>
+      <p>
+        Living Word Church began in 1990 with a vision to reach the community with the transformative message of Jesus Christ. Over the decades, we have grown from a small fellowship to a thriving congregation rooted in biblical teaching and community service.
+      </p>
+    </div>
+  </section>
+
+  <section class="mission-vision">
+    <div class="container">
+      <div class="column">
+        <h3>Our Mission</h3>
+        <p>
+          To spread the Gospel of Christ to all nations, nurture spiritual growth, and build strong families in faith.
+        </p>
+      </div>
+      <div class="column">
+        <h3>Our Vision</h3>
+        <p>
+          To become a center of excellence where believers thrive, lives are transformed, and God's purpose is fulfilled.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="leadership">
+    <div class="container">
+      <h3>Meet Our Leadership</h3>
+      <div class="leaders">
+        <div class="leader">
+          <img src="images/pastor.jpg" alt="Lead Pastor" />
+          <h4>Pastor John Doe</h4>
+          <p>Senior Pastor</p>
+        </div>
+        <div class="leader">
+          <img src="images/assistant.jpg" alt="Assistant Pastor" />
+          <h4>Rev. Mary Smith</h4>
+          <p>Associate Pastor</p>
+        </div>
+        <div class="leader">
+          <img src="images/music-director.jpg" alt="Music Director" />
+          <h4>Brother Alex</h4>
+          <p>Worship Leader</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h3>What Our Members Say</h3>
+      <div class="testimonial">
+        <img src="images/client1.jpg" alt="Client Testimonial" />
+        <blockquote>
+          "Living Word Church is more than a place of worship — it's my spiritual family. I have grown tremendously in my faith."
+        </blockquote>
+        <p class="author">– Sister Grace A.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h4>About Us</h4>
+        <p>Living Word Church is a vibrant and welcoming faith community located in the heart of the city.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Info</h4>
+        <p>123 Gospel Road, Grace City, NG</p>
+        <p>Email: info@livingwordchurch.org</p>
+        <p>Phone: +234 800 123 4567</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-service">
+        <h4>Service Times</h4>
+        <p>Sunday Worship: 9:00 AM</p>
+        <p>Wednesday Bible Study: 6:30 PM</p>
+        <p>Friday Prayer Night: 10:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Living Word Church. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+
+</html>
