@@ -18,13 +18,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <!-- <link rel="stylesheet" href="./pages/about.html" /> -->
+
+       <!-- ---------Main-script---------- -->
+    <script src="./js/script.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </head>
 
   <body>
     <header class="navbar" id="navbar">
       <div class="container">
-        <div class="logo">Monica <span>Brazell</span></div>
+        <div class="logo">Monica<span>-Brazell</span></div>
         <nav>
           <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
@@ -223,12 +226,17 @@
         <div class="contact-grid">
           <!-- Contact Form -->
           <div class="contact-form" data-aos="fade-up">
-            <form action="#" method="#">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xovlnbvn"
+              method="POST"
+            >
               <div class="form-group">
                 <label for="name">Full Name</label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   placeholder="Enter your name"
                   required
                 />
@@ -238,6 +246,7 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="Enter your email"
                   required
                 />
@@ -246,12 +255,18 @@
                 <label for="message">Message</label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="5"
                   placeholder="Type your message here..."
                   required
                 ></textarea>
               </div>
               <button type="submit" class="btn-submit">Send Message</button>
+
+              <!-- Success message (hidden by default) -->
+              <div id="form-success" class="form-success">
+                ✅ Thank you! Your message has been sent successfully.
+              </div>
             </form>
           </div>
 
@@ -267,13 +282,6 @@
             ></iframe>
           </div>
         </div>
-
-        <!-- WhatsApp Contact -->
-        <!-- <div class="whatsapp-chat" data-aos="zoom-in">
-        <a href="https://wa.me/2348012345678" target="_blank" class="whatsapp-btn">
-          Chat with us on WhatsApp
-        </a>
-      </div> -->
       </div>
     </section>
 
@@ -282,7 +290,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <h2>Monica <span>Brazzell</span></h2>
+            <h2>Monica<span>-Brazell</span></h2>
             <p>Empowering lives with faith, love, and purpose.</p>
           </div>
           <div class="footer-links">
@@ -297,7 +305,7 @@
           <div class="footer-contact">
             <h3>Contact</h3>
             <p>123 Grace Street, Lagos, Nigeria</p>
-            <p>Email: contact@monicalbrazzell.org<</p>
+            <p>Email: contact@monicalbrazzell.org</p>
             <p>Phone: +234 091 310 7823</p>
           </div>
         </div>
@@ -341,8 +349,7 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
-    <script src="./js/script.js"></script>
-    <script src="./js/main.js"></script>
+ 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
